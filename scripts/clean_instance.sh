@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rm -rf /usr/local/share/applications/poll
+rm -rf /usr/local/share/applications/poll/*
