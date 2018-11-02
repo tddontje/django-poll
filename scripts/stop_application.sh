@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 cd /usr/local/share/applications/poll
-echo "stopping application"
+pkill -f "python3 manage.py runserver 0:8000"
+
