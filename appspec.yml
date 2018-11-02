@@ -11,10 +11,15 @@ files:
   - source: /
     destination: /usr/local/share/applications/poll
 permissions:
+  - object: /usr/local/share/applications
+    pattern: "poll"
+    owner: ec2-user
+    group: ec2-user
   - object: /usr/local/share/applications/poll
     pattern: "**"
     owner: ec2-user
     group: ec2-user
+
 hooks:
   BeforeInstall:
     - location: scripts/clean_instance.sh
